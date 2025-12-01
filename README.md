@@ -1,81 +1,48 @@
-# FocusApp
-Purpose
-A scientifically grounded 3‑minute intervention app to enhance attention and reading comprehension for the next hour using evidence‑based methods (mindfulness, nature exposure, and visual priming).
+# 3-Minute Focus Reset MVP
 
-1. Core Cognitive Design Principles
-Breathing & Awareness (Minute 0‑1): Reduce anxiety and activate parasympathetic calm. Use guided 4‑6 breath cycles with smooth animation and natural sound.
+A minimal, scientifically-grounded web application designed to help users regain focus in just 3 minutes through a guided 3-phase process:
+1. **Meditation Reset** (Breathing exercise)
+2. **Focus Activation** (Word recall memory task)
+3. **Performance** (Centering for the task ahead)
 
-Nature Restoration (Minute 1‑2): Show calm nature visuals (greenery, water, sky) to trigger Attention Restoration Theory mechanisms that replenish attention.
+##  Getting Started
 
-Visual Priming (Minute 2‑3): Eyes follow slow‑moving visual targets or near‑far accommodation to activate visual attention pathways used in reading.
+Follow these steps to run the project from scratch.
 
-Ritualized Flow: Always follow the same 3‑minute sequence to create psychological predictability and focused state priming.
+### Prerequisites
+- **Node.js** (v18 or higher recommended)
+- **npm** (comes with Node.js)
 
-2. What Works (from research)
-Brief mindfulness improves attention even in novices.
+### Installation
 
-Viewing nature (real or digital) restores working memory and focus.
+1. **Install Dependencies**
+   Open your terminal in the project folder and run:
+   \\\ash
+   npm install
+   \\\
 
-Cognitive priming enhances near‑term performance.
+2. **Start Development Server**
+   Start the local server:
+   \\\ash
+   npm run dev
+   \\\
+   The app will be available at \http://localhost:5173\ (or the port shown in your terminal).
 
-Consistent pre‑task rituals strengthen mental readiness.
+### Building for Production
 
-Minimal gamification (progress streaks or simple visuals) sustains motivation without adding distraction.
+To create an optimized build for deployment:
+\\\ash
+npm run build
+\\\
 
-3. What to Avoid
-Over‑stimulating visuals, sounds, or notifications.
+##  Tech Stack
+- **React** (Vite)
+- **Tailwind CSS** (Styling)
+- **Radix UI** (Accessible components)
+- **Lucide React** (Icons)
 
-Rapid or context‑switching content (e.g., short‑form video style).
+##  Project Structure
+- \src/components\: UI components (Screens, BreathingCue, etc.)
+- \src/lib\: Logic for the session engine and storage
+- \src/styles\: Global CSS and Tailwind configuration
 
-Excessive gamification and complex scoring.
-
-Cluttered UI or cognitive friction in navigation.
-
-Storing personal data without clear privacy policy or consent.
-
-4. App UX / UI Best Practices (2025 standards)
-Minimal interface: Focus on clarity, whitespace, and single‑purpose flow.
-
-Adaptive design: Responsive across iOS and Android using Flutter or React Native.
-
-Accessibility-first: Design contrast, text scaling, and screen reader support.
-
-Performance: Lazy loading, intelligent caching, minimal background tasks to reduce battery usage.
-
-Energy-efficient: Offer dark mode and optimize animations.
-
-5. Personalization Layer
-Brief onboarding survey (attention issues, goals, reading duration).
-
-Dynamically adjust sequence balance (breathing vs. visual vs. nature) based on user profile.
-
-Track trends in self‑reported focus and comprehension post‑session.
-
-6. Technical Development Focus
-Cross‑platform: Flutter or React Native for efficient reuse.
-
-Local storage for offline functionality.
-
-Secure data practices (no 3rd‑party trackers).
-
-Modular backend design for scalable updates.
-
-Integrate analytics to test variants (A/B mindfulness vs. visual blocks).
-
-7. Research Validation Plan
-Run pilot RCT (intervention vs. control) measuring comprehension and focus.
-
-Collect self‑reports + objective metrics (time‑on‑task, drift rate).
-
-Iterate features using behavioral data feedback.
-
-8. 2025 Development Priorities (from industry)
-AI‑driven personalization: predictive nudging based on user rhythm.
-
-Cross‑platform optimization: single codebase, consistent UX.
-
-Sustainability: low energy consumption, compressed assets.
-
-Adaptive UX: context‑aware interface that feels intuitive.
-
-Continuous testing: automated QA across devices.
